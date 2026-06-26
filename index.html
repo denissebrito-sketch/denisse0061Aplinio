@@ -3,29 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo Incorporado</title>
+    <title>Cristiano Ronaldo - CR7</title>
     <style>
-        .video-container {
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #111;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 5px;
+        }
+        .bio-section {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .bio-text {
+            flex: 2;
+            min-width: 300px;
+        }
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .stats-table th, .stats-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .stats-table th {
+            background-color: #111;
+            color: white;
+        }
+        .stats-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #fff;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
-    <div class="video-container">
-        <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/D1o3QVMJgho" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-         iframe>
+    <header>
+        <h1>Cristiano Ronaldo</h1>
+        <p>O Robozão | CR7</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="bio-section">
+            <div class="bio-text">
+                <h2>Quem é CR7?</h2>
+                <p><strong>Cristiano Ronaldo dos Santos Aveiro</strong> (nascido em 5 de fevereiro de 1985) é um futebolista português que atua como atacante. Amplamente considerado um dos maiores jogadores de todos os tempos, ele é famoso por sua dedicação implacável, preparo físico impecável e faro de gol absurdo.</p>
+                <p>Com passagens marcantes por grandes clubes do mundo, CR7 quebrou recordes em quase todas as competições que disputou, tornando-se o maior artilheiro da história do futebol em jogos oficiais.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Principais Clubes</h2>
+            <ul>
+                <li><strong>Sporting CP</strong> (Portugal)</li>
+                <li><strong>Manchester United</strong> (Inglaterra)</li>
+                <li><strong>Real Madrid</strong> (Espanha)</li>
+                <li><strong>Juventus</strong> (Itália)</li>
+                <li><strong>Al-Nassr</strong> (Arábia Saudita)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Principais Conquistas</h2>
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Prêmio / Torneio</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bola de Ouro (Ballon d'Or)</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>UEFA Champions League</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Eurocopa (Seleção Portuguesa)</td>
+                        <td>1 (2016)</td>
+                    </tr>
+                    <tr>
+                        <td>Chuteira de Ouro da UEFA</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>O Legado SIUUU!</h2>
+            <p>Além de seus títulos coletivos e individuais, Cristiano Ronaldo é uma máquina de marketing global e o atleta mais seguido nas redes sociais do planeta. Sua famosa comemoração, saltando e gritando "SIUUU!", virou um fenômeno cultural imitado por atletas e fãs no mundo inteiro.</p>
+        </section>
+
     </div>
+
+    <footer>
+        <p>&copy; Página de Fã do CR7. Feito com HTML e CSS.</p>
+    </footer>
 
 </body>
 </html>
